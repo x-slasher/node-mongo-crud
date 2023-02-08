@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "0c6e6069-db13-475c-abb8-98baeeb89aa6",
+		"name": "node-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20497641"
+	},
+	"item": [
+		{
+			"name": "Create Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Camille Rewinds\",\n  \"body\": \"Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\",\n  \"image\": \"http://dummyimage.com/241x100.png/cc0000/ffffff\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{node_url}}/blogs/",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{node_url}}/blogs",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{node_url}}/blogs/63e3779151677e1fe66bf58c",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"blogs",
+						"63e3779151677e1fe66bf58c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Camille Rewindse\",\n  \"body\": \"Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\",\n  \"image\": \"http://dummyimage.com/241x100.png/cc0000/ffffff\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{node_url}}/blogs/63e37be951677e1fe66bf598",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"blogs",
+						"63e37be951677e1fe66bf598"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{node_url}}/blogs/63e37b8251677e1fe66bf58e",
+					"host": [
+						"{{node_url}}"
+					],
+					"path": [
+						"blogs",
+						"63e37b8251677e1fe66bf58e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
