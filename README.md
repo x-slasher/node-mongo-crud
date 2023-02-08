@@ -49,4 +49,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Running the project
 
-    $ npm run dev
+    $ npm run devgit push -u origin main
+
+## Extra information 
+Import the `node-mongo.postman_collection.json` file in your postman collection to use the api
